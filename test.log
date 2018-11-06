@@ -1,0 +1,817 @@
+2018/11/02 12:22:29 api.go:413: test out:test log 
+2018/11/04 16:53:47 api.go:422: test out:test log 
+2018/11/04 16:53:49 server.go:2979: http: panic serving 192.168.100.169:26655: ./httpService flag redefined: log
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xa482ea0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa5423b0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa476000, 0x85962c0, 0xa542390, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa476000, 0xa542390, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa476000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa473050, 0xa4aa600)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa473050, 0xa4aa600)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa473050, 0xa4aa600)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa473050, 0xa4aa600)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa4aa500, 0x85978c0, 0xa473050, 0xa4aa600)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa482ea0, 0x8597bc0, 0xa4f4fe0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:53:49 server.go:2979: http: panic serving 192.168.100.169:26675: ./httpService flag redefined: log
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xa584300)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa5281e0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa476000, 0x85962c0, 0xa5281c0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa476000, 0xa5281c0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa476000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa592120, 0xa582100)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa592120, 0xa582100)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa592120, 0xa582100)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa592120, 0xa582100)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa4aa500, 0x85978c0, 0xa592120, 0xa582100)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa584300, 0x8597bc0, 0xa5263e0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:53:53 server.go:2979: http: panic serving 192.168.100.169:26685: ./httpService flag redefined: log
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xa54a3c0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa542498)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa476000, 0x85962c0, 0xa542478, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa476000, 0xa542478, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa476000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa54c2d0, 0xa55c100)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa54c2d0, 0xa55c100)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa54c2d0, 0xa55c100)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa54c2d0, 0xa55c100)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa4aa500, 0x85978c0, 0xa54c2d0, 0xa55c100)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa54a3c0, 0x8597bc0, 0xa546520)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:16 api.go:422: test out:test log 
+2018/11/04 16:54:26 server.go:2979: http: panic serving 192.168.100.169:26723: ./httpService flag redefined: log
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xa930240)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa9261c0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa9261a0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa9261a0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa873200, 0xa8aa400)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa873200, 0xa8aa400)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa873200, 0xa8aa400)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa873200, 0xa8aa400)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa873200, 0xa8aa400)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa930240, 0x8597bc0, 0xa92a420)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:26 server.go:2979: http: panic serving 192.168.100.169:26740: ./httpService flag redefined: log
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xa930420)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa926268)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa926248, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa926248, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa92c2d0, 0xa924300)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa92c2d0, 0xa924300)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa92c2d0, 0xa924300)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa92c2d0, 0xa924300)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa92c2d0, 0xa924300)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa930420, 0x8597bc0, 0xa92a6e0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:29 server.go:2979: http: panic serving 192.168.100.169:26746: ./httpService flag redefined: log
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xa882f00)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa926308)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa9262e8, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa9262e8, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa92c3f0, 0xa924380)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa92c3f0, 0xa924380)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa92c3f0, 0xa924380)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa92c3f0, 0xa924380)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa92c3f0, 0xa924380)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa882f00, 0x8597bc0, 0xa92a8a0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:30 server.go:2979: http: panic serving 192.168.100.169:26748: ./httpService flag redefined: log
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xa882f60)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa926398)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa926378, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa926378, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa873290, 0xa8aa480)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa873290, 0xa8aa480)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa873290, 0xa8aa480)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa873290, 0xa8aa480)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa873290, 0xa8aa480)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa882f60, 0x8597bc0, 0xa8f4fc0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:30 server.go:2979: http: panic serving 192.168.100.169:26752: ./httpService flag redefined: log
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xa97a0c0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa964288)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa964268, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa964268, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa984090, 0xa96a080)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa984090, 0xa96a080)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa984090, 0xa96a080)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa984090, 0xa96a080)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa984090, 0xa96a080)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa97a0c0, 0x8597bc0, 0xa95c2c0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:31 server.go:2979: http: panic serving 192.168.100.169:26754: ./httpService flag redefined: log
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xa930840)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa9264d0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa9264b0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa9264b0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa92c5a0, 0xa924400)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa92c5a0, 0xa924400)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa92c5a0, 0xa924400)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa92c5a0, 0xa924400)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa92c5a0, 0xa924400)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa930840, 0x8597bc0, 0xa92aae0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:31 server.go:2979: http: panic serving 192.168.100.169:26756: ./httpService flag redefined: log
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xa883080)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa926520)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa926500, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa926500, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa873320, 0xa8aa500)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa873320, 0xa8aa500)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa873320, 0xa8aa500)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa873320, 0xa8aa500)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa873320, 0xa8aa500)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa883080, 0x8597bc0, 0xa8f5220)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:32 server.go:2979: http: panic serving 192.168.100.169:26761: ./httpService flag redefined: log
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xa8831a0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa964318)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa9642f8, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa9642f8, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa92c750, 0xa924480)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa92c750, 0xa924480)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa92c750, 0xa924480)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa92c750, 0xa924480)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa92c750, 0xa924480)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa8831a0, 0x8597bc0, 0xa92acc0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:54:32 server.go:2979: http: panic serving 192.168.100.169:26763: ./httpService flag redefined: log
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xa930ba0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0xa9643b8)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0xa876000, 0x85962c0, 0xa964398, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0xa876000, 0xa964398, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0xa876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0xa92c7e0, 0xa924500)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0xa92c7e0, 0xa924500)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0xa92c7e0, 0xa924500)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0xa92c7e0, 0xa924500)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0xa924180, 0x85978c0, 0xa92c7e0, 0xa924500)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0xa930ba0, 0x8597bc0, 0xa92aea0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:56:39 api.go:422: test out:test log 
+2018/11/04 16:56:41 server.go:2979: http: panic serving 192.168.100.169:26987: ./httpService flag redefined: log
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0x994a000)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x99280e0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9876000, 0x85962c0, 0x99280c0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9876000, 0x99280c0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x986b3b0, 0x98aa580)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x986b3b0, 0x98aa580)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524488, 0x85978c0, 0x986b3b0, 0x98aa580)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x986b3b0, 0x98aa580)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9942000, 0x85978c0, 0x986b3b0, 0x98aa580)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x994a000, 0x8597bc0, 0x9926200)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:56:41 server.go:2979: http: panic serving 192.168.100.169:26990: ./httpService flag redefined: log
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0x98831a0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x9928170)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9876000, 0x85962c0, 0x9928150, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9876000, 0x9928150, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x986b440, 0x98aa600)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x986b440, 0x98aa600)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524488, 0x85978c0, 0x986b440, 0x98aa600)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x986b440, 0x98aa600)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9942000, 0x85978c0, 0x986b440, 0x98aa600)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x98831a0, 0x8597bc0, 0x98f53a0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:56:42 server.go:2979: http: panic serving 192.168.100.169:26992: ./httpService flag redefined: log
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0x98832c0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x99a0040)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9876000, 0x85962c0, 0x99a0020, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9876000, 0x99a0020, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x986b4d0, 0x98aa680)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x986b4d0, 0x98aa680)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524488, 0x85978c0, 0x986b4d0, 0x98aa680)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x986b4d0, 0x98aa680)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9942000, 0x85978c0, 0x986b4d0, 0x98aa680)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x98832c0, 0x8597bc0, 0x98f55e0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:56:43 server.go:2979: http: panic serving 192.168.100.169:26999: ./httpService flag redefined: log
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0x99aa0c0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x999c0c0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9876000, 0x85962c0, 0x999c0a0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9876000, 0x999c0a0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9876000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x99ae090, 0x99a2080)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x99ae090, 0x99a2080)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524488, 0x85978c0, 0x99ae090, 0x99a2080)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x99ae090, 0x99a2080)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9942000, 0x85978c0, 0x99ae090, 0x99a2080)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x99aa0c0, 0x8597bc0, 0x996c0a0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:59:55 api.go:422: test out:test log 
+2018/11/04 16:59:57 server.go:2979: http: panic serving 192.168.100.169:27415: ./httpService flag redefined: log
+goroutine 4 [running]:
+net/http.(*conn).serve.func1(0x99461e0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x986de70)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x986de50, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x986de50, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9948120, 0x9954100)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9948120, 0x9954100)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9948120, 0x9954100)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9948120, 0x9954100)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9948120, 0x9954100)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x99461e0, 0x8597bc0, 0x995c040)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 16:59:57 server.go:2979: http: panic serving 192.168.100.169:27419: ./httpService flag redefined: log
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x9946300)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x986dec0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x986dea0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x986dea0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x99481b0, 0x9954200)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x99481b0, 0x9954200)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x99481b0, 0x9954200)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x99481b0, 0x9954200)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x99481b0, 0x9954200)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946300, 0x8597bc0, 0x984a500)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:00:44 server.go:2979: http: panic serving 192.168.100.169:27491: ./httpService flag redefined: log
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0x9946420)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x980e2e0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x980e2c0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x980e2c0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9948240, 0x9954280)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9948240, 0x9954280)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9948240, 0x9954280)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9948240, 0x9954280)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9948240, 0x9954280)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946420, 0x8597bc0, 0x984a780)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:00:48 server.go:2979: http: panic serving 192.168.100.169:27514: ./httpService flag redefined: log
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0x98990e0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x995e0d0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x995e0b0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x995e0b0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x987b3b0, 0x98c0500)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x987b3b0, 0x98c0500)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x987b3b0, 0x98c0500)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x987b3b0, 0x98c0500)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x987b3b0, 0x98c0500)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x98990e0, 0x8597bc0, 0x990d180)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:00:50 server.go:2979: http: panic serving 192.168.100.169:27519: ./httpService flag redefined: log
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0x9946600)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x995e120)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x995e100, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x995e100, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9948360, 0x9954300)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9948360, 0x9954300)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9948360, 0x9954300)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9948360, 0x9954300)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9948360, 0x9954300)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946600, 0x8597bc0, 0x984aa00)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:00:51 server.go:2979: http: panic serving 192.168.100.169:27520: ./httpService flag redefined: log
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0x9946720)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x980e460)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x980e440, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x980e440, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x99483f0, 0x9954380)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x99483f0, 0x9954380)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x99483f0, 0x9954380)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x99483f0, 0x9954380)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x99483f0, 0x9954380)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946720, 0x8597bc0, 0x984abe0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:00 server.go:2979: http: panic serving 192.168.100.169:27545: ./httpService flag redefined: log
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0x996a240)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x986dfb8)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x986df98, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x986df98, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9948510, 0x9954480)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9948510, 0x9954480)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9948510, 0x9954480)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9948510, 0x9954480)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9948510, 0x9954480)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x996a240, 0x8597bc0, 0x984ae00)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:02 server.go:2979: http: panic serving 192.168.100.169:27550: ./httpService flag redefined: log
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0x99469c0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x9a4e048)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x9a4e028, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x9a4e028, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x99485a0, 0x9954500)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x99485a0, 0x9954500)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x99485a0, 0x9954500)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x99485a0, 0x9954500)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x99485a0, 0x9954500)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x99469c0, 0x8597bc0, 0x984b000)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:04 server.go:2979: http: panic serving 192.168.100.169:27556: ./httpService flag redefined: log
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0x9946ae0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x980e5f0)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x980e5d0, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x980e5d0, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9948630, 0x9954580)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9948630, 0x9954580)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9948630, 0x9954580)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9948630, 0x9954580)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9948630, 0x9954580)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946ae0, 0x8597bc0, 0x984b2a0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:05 server.go:2979: http: panic serving 192.168.100.169:27558: ./httpService flag redefined: log
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0x9899380)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x980e620)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x980e600, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x980e600, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x987b560, 0x98c0580)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x987b560, 0x98c0580)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x987b560, 0x98c0580)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x987b560, 0x98c0580)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x987b560, 0x98c0580)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9899380, 0x8597bc0, 0x990d3a0)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:05 server.go:2979: http: panic serving 192.168.100.169:27562: ./httpService flag redefined: log
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0x98994a0)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x9a4e1e8)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x9a4e1c8, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x9a4e1c8, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x987b5f0, 0x98c0600)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x987b5f0, 0x98c0600)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x987b5f0, 0x98c0600)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x987b5f0, 0x98c0600)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x987b5f0, 0x98c0600)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x98994a0, 0x8597bc0, 0x990d580)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:47 server.go:2979: http: panic serving 192.168.100.169:27589: ./httpService flag redefined: log
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0x9946d80)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x9a4f150)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x9a4f130, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x9a4f130, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9949170, 0x9954a00)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9949170, 0x9954a00)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9949170, 0x9954a00)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9949170, 0x9954a00)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9949170, 0x9954a00)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9946d80, 0x8597bc0, 0x990d740)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
+2018/11/04 17:01:47 server.go:2979: http: panic serving 192.168.100.169:27628: ./httpService flag redefined: log
+goroutine 75 [running]:
+net/http.(*conn).serve.func1(0x9ab1080)
+	/usr/local/go/src/net/http/server.go:1746 +0x9f
+panic(0x847bcc0, 0x980f098)
+	/usr/local/go/src/runtime/panic.go:513 +0x16d
+flag.(*FlagSet).Var(0x9884000, 0x85962c0, 0x980f078, 0x84f885a, 0x3, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:805 +0x43b
+flag.(*FlagSet).StringVar(0x9884000, 0x980f078, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd)
+	/usr/local/go/src/flag/flag.go:708 +0x6a
+flag.(*FlagSet).String(0x9884000, 0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x1)
+	/usr/local/go/src/flag/flag.go:721 +0x67
+flag.String(0x84f885a, 0x3, 0x84fd646, 0x8, 0x8500643, 0xd, 0x33)
+	/usr/local/go/src/flag/flag.go:728 +0x53
+hello/api.SignIn(0x85978c0, 0x9ac07e0, 0x98c0e00)
+	/mnt/hgfs/go_share/src/hello/api/api.go:412 +0xb6f
+main.request(0x85978c0, 0x9ac07e0, 0x98c0e00)
+	/mnt/hgfs/go_share/src/hello/httpService.go:51 +0x156
+net/http.HandlerFunc.ServeHTTP(0x8524494, 0x85978c0, 0x9ac07e0, 0x98c0e00)
+	/usr/local/go/src/net/http/server.go:1964 +0x34
+net/http.(*ServeMux).ServeHTTP(0x88affe0, 0x85978c0, 0x9ac07e0, 0x98c0e00)
+	/usr/local/go/src/net/http/server.go:2361 +0xf0
+net/http.serverHandler.ServeHTTP(0x9954080, 0x85978c0, 0x9ac07e0, 0x98c0e00)
+	/usr/local/go/src/net/http/server.go:2741 +0x98
+net/http.(*conn).serve(0x9ab1080, 0x8597bc0, 0x9ab2d00)
+	/usr/local/go/src/net/http/server.go:1847 +0x5ea
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2851 +0x26a
